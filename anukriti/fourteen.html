@@ -1,0 +1,66 @@
+<html>
+<head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script> 
+  
+ <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <script >
+
+      var x = document.getElementById("myFile")
+
+    </script>
+    <script type="text/javascript"> 
+     $(document).ready(function() { 
+
+
+
+
+      $("#form1").validate({ 
+         rules: { 
+           name: { 
+            required:true
+
+         },
+          phone: { 
+            required: true 
+         }, 
+         address: { 
+           required: true 
+          } 
+         }, 
+
+
+         messages: {
+     name: "Please specify your name",
+     email: {
+       required: "We need your email address to contact you",
+       email: "Your email address must be in the format of name@domain.com"
+     }
+   }
+          
+        }); 
+      }); 
+    </script> 
+</head>
+<body>
+   <form id="form1" method="post" action=""> 
+<center>
+<h2>
+
+  Name: <input type="text" name="name"  placeholder="enter your name"><br>
+  Phone no.: <input type="text" name="phone" pattern="[0-9]{10}"placeholder="enter your phone nember here"><br>
+  Email: <input type="email" name="mail" placeholder="enter your mail id here"><br>
+  Address: <input type="text" name="add" placeholder="enter your address here here"><br>
+  Pincode: <input type="text"name="pin" pattern="[0-9]{4}"  maxlength="6"><br>
+  Upload: <input type="file"name="file"><br>
+  Submit: <input type="submit" >
+
+  <h2>
+   </center>
+   </form>
+
+
+
+
+
+</body>
+</html>

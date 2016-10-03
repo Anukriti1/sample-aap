@@ -1,0 +1,32 @@
+
+1. Create a script to show date and time on javascript page.
+
+2. Create a html page which asks a question like 3+4? and shows an input box to enter the answer. if the answer is correct, then the script shows a dialog box to tell if the answer is correct or not. 
+
+3. Modify date and time script to show UTC time as well.
+
+4. Create a javascript array to store the names of students in a class. On loading the page, the script should pick up a random student and display his name in the browser console. 
+
+
+5. Take a static integer array. The script should show the average of the integers in the browser console. 
+6. Take the names as input from a dialog. The dialog should keep asking names till a checkbox on the dialog which says stop further dialogs is checked. After that display the names in alphabetical order which were entered through browser console. 
+
+7. Make Graphical Back and Forward Buttons which scroll the user back and forward through the browser history.
+
+8. Include reload button in 7.
+
+9. Change your resume from Word to HTML format. 
+
+10. Add a button to show hide the education table. 
+
+11. Add a button to change the background of the CV to red. 
+
+12. Add a button to remove the education details from the CV. 
+
+13. Repeat 10-12 using jQuery.
+
+14. Create html form with the below inputs.
+
+Name/phone/email/address/file upload/zipcode.
+
+Add jquery validation using jquery validator library.

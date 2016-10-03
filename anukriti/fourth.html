@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<center>
+
+<button onclick="myFunction()">click here to add names</button>
+<p id="demo"></p>
+<p id="demo1"></p>
+
+</center>
+ <script type="text/javascript">
+ 
+   var namearray=new Array();
+   var counter=0;
+ function myFunction() 
+ {
+     while(counter<5) 
+     {
+       var person = prompt("Please enter your name");
+       namearray.push(person);
+       counter++;
+      document.getElementById("demo").innerHTML = namearray;
+     }  
+   var show = namearray[Math.floor(Math.random() * namearray.length)];
+     document.getElementById("demo1").innerHTML = show;
+ }
+     
+</script>
+</body>
+</html>

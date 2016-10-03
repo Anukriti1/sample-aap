@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<button onclick="myFunction()">click here to enter names</button>
+
+<p  id="demo"></p>
+ <script type="text/javascript">
+ 
+   var namearray=new Array();
+   var counter=0;
+ function myFunction() 
+ {
+     while(counter<5) 
+     {
+       var person = prompt("Please enter your name");
+       namearray.push(person);
+       counter++;
+     
+     }  
+     namearray.sort();
+     console.log(namearray);
+      document.getElementById("demo").innerHTML = namearray;
+ }
+     
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+<p>click here to get the average</p>
+
+<button onclick="myFunction()">click here</button>
+
+<p id="demo"></p>
+</center>
+<script>
+ 
+   var numarray=new Array();
+   var counter=0;
+ thisTotal=0,thisAverage=0;
+function myFunction() 
+{
+ 
+     while(counter<5) 
+     {
+       var num = prompt("Please enter numbers");
+       numarray.push(num);
+       counter++;
+     
+     }  
+  
+    document.getElementById("demo").innerHTML = numarray;
+    for(var i=0;i<numarray.length;i++)
+  { 
+
+  	thisTotal=parseInt(thisTotal)+parseInt(numarray[i]);
+  }
+
+ 
+ thisAverage=(thisTotal/numarray.length);
+
+ alert(thisAverage);
+ }
+
+</script>
+
+</body>
+</html>
