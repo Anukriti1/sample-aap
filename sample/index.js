@@ -23,7 +23,7 @@ app.get('/regis', function(req, res) {
 
 app.get('/employ',function(req,res){
 
-res.render('pages/employ',{make:mk});
+res.render('pages/employ',{make:str});
 
 });
 
@@ -116,29 +116,23 @@ db.open(function(err, db) {
 
 // app.post('/employ',function(req,res){
 
-       
+      str=""; 
  db.open(function(err, db) {
 
-    db.collection('users', function(err, collection) {
+    var cursor=db.collection('users').find();
+  cursor.each(function(err,item){
 
-    collection.find().toArray(function(err,docs){
-      console.log(docs);
-        //do something
-     if(docs.length)
-     {
+      if(item!=null)
+    {  
+      console.log(item);
+        str=str+ "username" + item.username+  " email" +item.email+ "address" +item.address+ "phone" +item.phone+ "password" +item.password;
+         console.log(str);
+    }
+  });
 
-      mk=docs;
-     }
-
-    
-       
-       db.close();
-      });
-
-
+ console.log(str);
   
   });
-});
 
 
 // });
