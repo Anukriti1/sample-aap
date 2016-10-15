@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body class="container">
+
+    <header>
+        <% include ../partials/header %>
+    </header>
+
+    <main>
+        <form method="post" action="/regis">
+
+        <div class="jumbotron">
+
+        <h2>Register </h2>
+
+        Username <input type="text" name="uname" value="" > <br><br>
+
+        Password <input type="password" name="pass" value=""> <br><br>
+
+
+        Email    <input type="email" name="em" value="" > <br><br>
+
+        Phone no.<input type="text" name="num" value="" > <br><br>
+
+        Address  <input type="text" name="add" value="" > <br><br>
+
+        <input type="submit" value="submit">
+
+        </div>
+
+        </form>
+
+    </main>
+       
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+    
+</body>
+</html>
